@@ -1,2 +1,2 @@
 # eon.moe
-[My personal website](eon.moe)
+[My personal website](http://eon.moe)
