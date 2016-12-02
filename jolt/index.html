@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html" charset=UTF-8;>
+<title>I love you Jolteon♡</title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<style>
+div.transbox {
+  	margin: 28px 128px 80px 128px;
+	background: rgba(0,0,0,0.42);
+}
+div.misc {
+	margin: 8px 0px 0px 12px;
+	color: black;
+}
+.link_misc {
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+body {
+	background-image: url("files/background.png");
+	background-repeat: no-repeat; 
+	background-position: left top;
+	background-attachment: fixed;
+        margin: 0 auto;
+	color: white;
+        font-family: 나눔고딕, 돋움, Tahoma, Verdana, Arial, sans-serif;
+}
+button {
+    background-color: #1f8a0f;
+    color: white;
+    padding: 4px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 64px;
+}
+a {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body bgcolor="FFDE51">
+	<div class="misc" style="text_align:right" color="black">
+		<button style="width:120px" onclick="switchDiv()">로그인</button>
+	</div>
+	
+	<section id="loginWindow" class="loginform cf" style="display:none; position:absolute">
+		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="text">아이디</label>
+					<input type="email" name="usermail" placeholder="님 아이디 없잖아요" required>
+				</li>
+				<li>
+					<label for="password">비밀번호</label>
+					<input type="password" name="password" placeholder="비밀번호도" required></li>
+				<li>
+					<input type="reset" value="로그인" onclick=show_message();>
+				</li>
+			</ul>
+		</form>
+	</section>
+	
+	<div style="text-align:center" class="transbox" color="black"> <br>
+		<span style="font-size:32px">
+			<b>#135 쥬피썬더</b>
+		</span>
+  		<span style="font-size:20px">
+			<p>
+			<img src="files/jolteon_in_circle.png" width="240" height="240">
+			<p>
+			쥬피썬더 / サンダース / Jolteon / 雷伊貝
+			<br>
+		</span>
+		<span style="font-size:16px">
+			타입: <img src="files/electric_type_icon.png" width=24 height=24 align="top"> 전기 | 특성: 축전/속보
+			<br> <br>
+			HP: 65 | ATK: 65 | DEF: 60 | SPA: <b>110</b> | SPD: 95 | SPE: <b>130</b>
+			<p>
+		</span>
+  		<span style="font-size:28px">
+			<b>쥬피썬더</b>는 매우 강하며 귀엽기까지 한 <b>최고의 포켓몬</b>입니다!
+		</span>
+		<br> <br>
+  		<p>
+	</div>
+	
+	<div style="text-align:center" class="transbox" color="black"> <br>
+		<span style="font-size:32px">
+			<b>사납게 생겼다고요?</b> <br>
+		</span>
+		<span style="font-size:20px">
+			오, 전혀 그렇지 않습니다.
+			<p> <img src="files/sylveon.gif"> <p>
+			제가 보기에는 여기 이 님피아가 더 사나운 것 같네요.
+			<br>유감스럽지만, <b>님피아</b>는 여러분의 생각과는 다르게 굉장히 <b>나쁜</b> 포켓몬입니다.<br> <br> <p>
+			<img src="files/sad_flygon.png"> <br>
+		</span>
+		<span style="font-size:16px">
+			└님피아의 폭력성은 이미 널리 알려져있다.
+  		</span>
+		<br> <br>
+ 	</div>
+	
+	<div style="text-align:center" class="transbox" color="black"> <br>
+		<span style="font-size:32px">
+			<b>쥬피썬더가 무엇을 할 수 있을까요?</b> <br>
+		</span>
+		<span style="font-size:20px">
+			지금부터 쥬피썬더의 굉장한 능력들을 알려드리도록 하겠습니다.
+  		</span> <p> <br> <br> 
+		
+		<span style="font-size:20px">
+			1. 포플레 섭취량을 <b>스스로 조절</b>할 수 있습니다.
+		</span>
+		<p> <img src="files/joltpuff.gif"><br>
+		<span style="font-size:12px">
+			└포플레를 정중히 거절하는 모습
+  		</span> <br> <br>
+		<span style="font-size:16px">
+			이것이 얼마나 대단한 능력인지는 <a href="http://synapse.koreamed.org/Synapse/Data/PDFData/0008JKES/jkes-22-391.pdf" target="_blank"><span style="color:white; text-decoration:none"><b>여기를 클릭</b></span></a> 하시면 알 수 있습니다.
+  		</span> <p> <br> <br>
+		
+		<span style="font-size:20px">
+			2. 여러분의 <b>바베큐파티</b>를 도울 수 있습니다.
+		</span>
+		<p> <img src="files/chicken.gif"><br>
+		<span style="font-size:12px">
+			└피죤투 다리고기는 맛있기로 유명하다
+  		</span> <br> <br>
+		<span style="font-size:16px">
+			치킨 좋아하시나요? 저는 피자도 좋아합니다.<br>
+			뿐만 아니라, 여러분 집에 정전이 났을 때 어떤 도움을 줄 수도 있습니다.
+		</span> <p> <br> <br>
+		
+		<span style="font-size:20px">
+			3. 필요에따라 <b>비행타입</b>을 붙일 수 있습니다.
+		</span>
+		<p> <img src="files/jupi.png"><br>
+		<span style="font-size:12px">
+			└루기아와 호우오우도 대적하는 강력함.
+  		</span> <br> <br>
+		<span style="font-size:16px">
+			비행타입과 함께라면, 무시무시한 한카리아스의 지진이라도 두렵지 않을 것입니다.
+  		</span>
+		
+		<br> <br>
+ 	</div>
+	
+	<div style="text-align:center" class="transbox" color="black">
+		<br>
+		<span style="font-size:32px">
+		<b>위 내용이 구라같다고요?</b>
+		<br>
+		<span style="font-size:20px">
+		네, 구라입니다.
+		<p>
+		하지만 님피아가 플라이곤을 기절시킨것은 명백한 사실입니다.<br>
+		따라서 위 내용은 모두 사실일 수도 있습니다.
+		<br> <br>
+  		</span>
+ 	</div>
+	
+	<div style="text-align:center" class="transbox" color="black">
+		<br> <br>
+  		<img src="files/dj_jolteon.gif" width=196px height=196px" onclick="javascript_:viewPic('files/manga/1.png')"/><br> <span style="font-size:22px">쥬피썬더 커여워 ㅎㅎ</span><br> <br>
+		<span id="admit" style="font-size:14px"> 인정합니다. </span><span id="admitted" style="display:none">이미 인정받은 포켓몬입니다.</span><span> <input id="admitButton" type="checkbox" onclick=thankyou();></span> <br> 	<br>
+	</div>
+	
+	<div style="text-align:center" class="transbox" color="black"> <br>
+		<span style="font-size:28px">
+		<a href="http://www.eon.moe"><span style="color:white; text-decoration:none">eon.moe로 돌아가기</span></a>
+		</span> <br> <br>
+	</div>
+		<script>
+			function viewPic(img){
+			  foto1= new Image();
+			  foto1.src=(img);
+			  Controlla(img);
+			}
+			function Controlla(img){
+			  if((foto1.width!=0)&&(foto1.height!=0)){
+				viewFoto(img);
+			  }else{
+				funzione="Controlla('"+img+"')";
+				intervallo=setTimeout(funzione,20);
+			  }
+			}
+			function viewFoto(img){
+			  largh=foto1.width+20;
+			  altez=foto1.height+20;
+			  stringa="width="+largh+",height="+altez;
+			  finestra=window.open(img,"",stringa);
+			}
+			function thankyou() {
+				alert("감사합니다.");
+				document.getElementById('admit').style.display = "none";
+				document.getElementById('admitted').style.display = "inline";
+				document.getElementById('admitButton').style.display = "none";
+				window.open("http://jolt.eon.moe/NJA/invitation.html");
+			}	
+			function show_message() {
+			 alert("뭘 원하는거죠");
+			}
+			function switchDiv() {
+			   if (document.getElementById('loginWindow').style.display == "block") {
+				  document.getElementById('loginWindow').style.display = "none";
+			   }
+			   else {
+				  document.getElementById('loginWindow').style.display = "block";
+			   }
+			}
+			function showDiv() {
+			   document.getElementById('loginWindow').style.display = "block";
+			}
+			function closeDiv() {
+			   document.getElementById('loginWindow').style.display = "none";
+			}
+		</script>
+	</div>
+</body></html>
+
