@@ -4277,11 +4277,26 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 
+#banner {
+	width: 100%;
+    background-color: #4998e7;
+	overflow: hidden;
+	position: relative;
+}
+.nav-wrapper {
+	height: 64px;
+}
+
 .navbar {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+}
+.navbar-fixer {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar:before,
@@ -4306,7 +4321,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 
