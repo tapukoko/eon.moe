@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="files/table.css" type="text/css" media="screen">
+<link rel="stylesheet" href="files/lightbox.css" type="text/css" media="screen">
+<title>Ultra Wormhole Calculator for Pokemon USUM</title>
+<style>
+    body {
+        background: #ffea63;
+        margin: 0 auto;
+        font-family: 나눔고딕, Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+<style></style></head>
+<body>
+<div style="text-align:center">
+<br>
+<span style="font-size:180%; background: #ffffff">
+*[울트라홀 계산기]*</span>
+<br><br>
+  <img src="files/header.gif" style="width:14em">
+ </div>
+<br>
+<hr>
+<br>
+<div style="text-align:center">
+<span style="font-size:120%; background: #ffffff">
+광년에 따른 울트라홀 등장 확률<br><br>
+<table class="dextable" align="center">
+<tbody><tr>
+		<td class="fooevo">거리</td>
+		<td class="fooevo">타입 1</td>
+		<td class="fooevo">타입 2</td>
+		<td class="fooevo">타입 3</td>
+		<td class="fooevo">타입 4</td>
+	</tr>
+	<tr>
+		<td class="cen"> </td>
+		<td class="cen"><a target="_blank" href="files/ultrawormhole.jpg" rel="lightbox[ranger3]" title="Photo"><img src="files/ultrawormhole.jpg" alt="Photo" width="100" border="0"></a></td>
+		<td class="cen"><a target="_blank" href="files/wormhole2.jpg" rel="lightbox[ranger3]" title="Photo"><img src="files/wormhole2.jpg" alt="Photo" width="100" border="0"></a></td>
+		<td class="cen"><a target="_blank" href="files/wormhole3.jpg" rel="lightbox[ranger3]" title="Photo"><img src="files/wormhole3.jpg" alt="Photo" width="100" border="0"></a></td>
+		<td class="cen"><a target="_blank" href="files/wormhole4.jpg" rel="lightbox[ranger3]" title="Photo"><img src="files/wormhole4.jpg" alt="Photo" width="100" border="0"></a></td>
+	</tr>
+	<tr>
+		<td class="cen">0 광년</td>
+		<td class="cen">100%</td>
+		<td class="cen">0%</td>
+		<td class="cen">0%</td>
+		<td class="cen">0%</td>
+	</tr>
+	<tr>
+		<td class="cen">1000 광년</td>
+		<td class="cen">78%</td>
+		<td class="cen">20%</td>
+		<td class="cen">2%</td>
+		<td class="cen">0%</td>
+	</tr>
+	<tr>
+		<td class="cen">1500 광년</td>
+		<td class="cen">66%</td>
+		<td class="cen">30%</td>
+		<td class="cen">4%</td>
+		<td class="cen">0%</td>
+	</tr>
+	<tr>
+		<td class="cen">2000 광년</td>
+		<td class="cen">52%</td>
+		<td class="cen">40%</td>
+		<td class="cen">8%</td>
+		<td class="cen">0%</td>
+	</tr>
+	<tr>
+		<td class="cen">2500 광년</td>
+		<td class="cen">33%</td>
+		<td class="cen">50%</td>
+		<td class="cen">16%</td>
+		<td class="cen">1%</td>
+	</tr>
+	<tr>
+		<td class="cen">3000 광년</td>
+		<td class="cen">32%</td>
+		<td class="cen">50%</td>
+		<td class="cen">16%</td>
+		<td class="cen">2%</td>
+	</tr>
+	<tr>
+		<td class="cen">3500 광년</td>
+		<td class="cen">31%</td>
+		<td class="cen">50%</td>
+		<td class="cen">16%</td>
+		<td class="cen">3%</td>
+	</tr>
+	<tr>
+		<td class="cen">4000 광년</td>
+		<td class="cen">30%</td>
+		<td class="cen">50%</td>
+		<td class="cen">16%</td>
+		<td class="cen">4%</td>
+	</tr>
+	<tr>
+		<td class="cen">4500 광년</td>
+		<td class="cen">29%</td>
+		<td class="cen">50%</td>
+		<td class="cen">16%</td>
+		<td class="cen">5%</td>
+	</tr>
+</tbody></table>
+</div>
+
+<br>
+<hr>
+<br>
+<div style="text-align:center">
+<span style="font-size:120%; background: #ffffff">
+이로치 확률계산</span><br><br>
+
+나는
+<input type="text" id="lys"> 광년 진행했고, 
+
+<select id="typ">
+  <option value="a">1</option>
+  <option value="b">2</option>
+  <option value="c">3</option>
+  <option value="d">4</option>
+</select>
+타입 울트라홀에 들어갔다.
+<br><br>
+<button onclick="getResult()">결과 확인하기</button><br>
+<p id="result">여기에 결과가 표시됩니다.</p>
+
+<script>
+function getResult() {
+    var result = "undefined";
+    var ly = document.getElementById("lys").value;
+    var tp = document.getElementById("typ").value;
+if (tp=="a"){
+result="1% (고정)";
+}
+else if (tp=="b"){
+var ans = 1+Math.min(9,(ly/500)-1);
+ans = Math.max(ans, 0);
+result=ans+"%";
+if (result=="10%") {
+result="10% (타입 2 최대치!)";
+}
+}
+else if (tp=="c"){
+var ans = 1+2*Math.min(9,(ly/500)-1);
+ans = Math.max(ans, 0);
+result=ans+"%";
+if (result=="19%") {
+result="19% (타입 3 최대치!)";
+}
+}
+else {
+var ans = 4*Math.min(9,(ly/500)-1);
+ans = Math.max(ans, 0);
+result=ans+"%";
+if (result=="36%") {
+result="36% (타입 4 최대치!)";
+}
+}
+   
+
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body></html>
